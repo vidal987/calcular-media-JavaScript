@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Média De Alunos</title>
+
+  <style>
+    body{
+      background-color: aquamarine;
+      
+      align-items:center;
+      width: 50px;
+      height: 50px;
+    
+    }
+    
+   
+
+  </style>
+</head>
+<body>
+           
+  
+  <input name="primeiro" type="number"placeholder="Nota Do 1°Bimestre" height="200px" width="200px">
+  <input name="segundo" type="number" placeholder="Nota Do 2°Bimestre">
+  <input name="terceiro" type="number" placeholder="Nota Do 3°Bimestre">
+  <input name="quarto" type="number" placeholder="Nota Do 4°Bimestre">
+  <button class="botao">Calcular</button>
+                  
+
+ 
+  
+  
+
+  <script>
+
+    var primeiro = document.querySelector('input[name=primeiro]');
+    var segundo = document.querySelector('input[name=segundo]');
+    var terceiro = document.querySelector('input[name=terceiro]');
+    var quarto = document.querySelector('input[name=quarto]');
+    var botao = document.querySelector('button.botao');
+  
+    botao.onclick = function(aprovado, reprovado){
+      let soma = (Number(primeiro.value) + Number(segundo.value)+ Number(terceiro.value) + Number(quarto.value)) / 4;
+     alert(`A media final do aluno é: ${soma}`);
+    
+    };
+
+  </script>
+</body>
+</html>
